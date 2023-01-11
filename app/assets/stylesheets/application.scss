@@ -1,0 +1,59 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap";
+
+.title {
+  text-align: center;
+  font: normal normal medium 50px/61px Montserrat;
+  letter-spacing: 0px;
+  color: #36006C;
+  opacity: 1;
+}
+
+body {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.descr {
+  font: normal normal 300 21px/32px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 0.54;
+  text-align: -webkit-center;
+}
+
+.card-text {
+  /* UI Properties */
+  text-align: center;
+  font: normal normal medium 24px/29px Montserrat;
+  letter-spacing: 0px;
+  color: #36006C;
+  opacity: 1;
+}
+
+.card img {
+  margin-top: 20px;
+}
+
+.container-md {
+  margin-top: 50px;
+}
+
+.throw-card:hover {
+  background-color: #F8F8F8;
+}

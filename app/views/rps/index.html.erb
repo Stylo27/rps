@@ -1,0 +1,46 @@
+<div class='container-md text-center'>
+  <h2 class='title'>ROCK – PAPER – SCISSORS</h2>
+
+  <p class='descr'>Rock Paper Scissors is a zero sum game that is usually played by two people using their hands and no tools. The idea is to make shapes with an outstretched hand where each shape will have a certain degree of power and will lead to an outcome.</p>
+
+  <p><strong>SELECT YOUR BET</strong></p>
+
+  <div class='row align-items-start'>
+    <div class="col-4">
+      <%= link_to throw_path(user_throw: 'rock') do %>
+        <div class="card throw-card">
+          <%= image_tag 'Rock', size: '250x250', class: 'rounded mx-auto d-block' %>
+          <div class="card-body">
+            <div class="card-text">
+              Rock
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-4">
+      <%= link_to throw_path(user_throw: 'paper') do %>
+        <div class="card throw-card">
+          <%= image_tag 'Paper', size: '250x250', class: 'rounded mx-auto d-block' %>
+          <div class="card-body">
+            <div class="card-text">
+              Paper
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-4">
+      <%= link_to throw_path(user_throw: 'scissors') do %>
+        <div class="card throw-card">
+          <%= image_tag 'Scissors', size: '250x250', class: 'rounded mx-auto d-block' %>
+          <div class="card-body">
+            <div class="card-text">
+              Scissors
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
