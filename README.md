@@ -1,24 +1,23 @@
-# README
+## Welcome to Rock-Paper-Scissors game
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Game rules**
 
-Things you may want to cover:
+- Rock beats scissors
+- Scissors beats paper
+- Paper beats rock
+- Identical throws tie (rock == rock, etc.)
 
-* Ruby version
+**How to install application**
 
-* System dependencies
+- At the first we assume that you have already installed ruby
+  If you don't please take a look this manual https://gorails.com/setup/macos/13-ventura
 
-* Configuration
+1. Download project from repo https://github.com/Stylo27/rps.git
 
-* Database creation
+2. Make `bundle` to install gems
 
-* Database initialization
+3. Start server with `rails server`
 
-* How to run the test suite
+4. Go to `localhost:3000`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+5. Woohoo you can choose an option
