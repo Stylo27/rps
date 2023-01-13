@@ -9,3 +9,7 @@ default: &default
 development:
   <<: *default
   database: rps_development
+
+test:
+  <<: *default
+  database: rps_test

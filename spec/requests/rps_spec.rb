@@ -12,12 +12,7 @@ RSpec.describe RpsController, type: :request do
   end
 
   describe 'GET /throw' do
-    let(:server_throw) do
-      {
-        status: :won,
-        server_throw: :scissors
-      }
-    end
+    let(:server_throw) { create(:game_session, user_throw: 'rock', server_throw: 'scissors', status: 'won') }
 
     it 'redirects to homepage with messages' do
       expect(Rps::Play).to receive(:call).with('rock').and_return(server_throw)

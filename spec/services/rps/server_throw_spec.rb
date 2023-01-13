@@ -20,7 +20,7 @@ RSpec.describe Rps::ServerThrow do
     end
 
     it 'calls returns random throw' do
-      stub_const('AVAILABLE_THROWS', Rps::ServerThrow::AVAILABLE_THROWS, transfer_nested_constants: [:AVAILABLE_THROWS])
+      stub_const('AVAILABLE_THROWS', %w[rock paper scissors])
       expect(HTTParty).to receive(:get).and_return(server_response)
       expect(AVAILABLE_THROWS).to include(subject.call)
     end

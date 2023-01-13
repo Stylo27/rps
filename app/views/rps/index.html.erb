@@ -5,6 +5,12 @@
 
   <p><strong>SELECT YOUR BET</strong></p>
 
+  <h1>Statistic:</h1>
+
+  <p>User wins: <%= @statistic[:user_wins] %></p>
+  <p>Server wins: <%= @statistic[:server_wins] %></p>
+  <p>Win percentage: <%= @statistic[:win_percentage] %></p>
+
   <div class='row align-items-start'>
     <div class="col-4">
       <%= link_to throw_path(user_throw: 'rock') do %>

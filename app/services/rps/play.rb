@@ -23,16 +23,7 @@ module Rps
       status = :draw if user_throw == server_throw
       status = :lost if RULES[user_throw] != RULES[server_throw]
       status = :won if RULES[user_throw] == server_throw
-      build_result(status)
-    end
-
-    private
-
-    def build_result(status)
-      {
-        status:,
-        server_throw:
-      }
+      GameSession.create(status:, server_throw:, user_throw:)
     end
   end
 end
